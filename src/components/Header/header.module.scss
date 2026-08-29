@@ -1,0 +1,43 @@
+@use "../../styels/variables" as *;
+
+header {
+    width: 100%;
+    min-height: 14vh;
+    background-color: $background-header;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2vh 0 2vh;
+
+}
+
+.linksBlock {
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    margin-top: auto;
+    gap: 40px;
+
+}
+
+.link {
+    height: 3.5vh;
+    padding: 0 10px 0 10px;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    gap: 8px;
+    text-decoration: none;
+    color: $text-1-color;
+
+    @media(hover:hover) {
+        &:hover {
+            background-color: $header-link-hover;
+        }
+    }
+}
+
+.active {
+    color: aqua;
+}
