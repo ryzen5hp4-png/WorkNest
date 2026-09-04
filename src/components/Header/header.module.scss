@@ -2,11 +2,12 @@
 
 header {
     width: 100%;
-    min-height: 14vh;
+    height: 14vh;
     background-color: $background-header;
     display: flex;
     flex-direction: column;
     padding: 0 2vh 0 2vh;
+    border-bottom: 2px solid $header-border;
 
 }
 
@@ -16,28 +17,31 @@ header {
     display: flex;
     margin-top: auto;
     gap: 40px;
-
 }
 
 .link {
-    height: 3.5vh;
-    padding: 0 10px 0 10px;
-    font-size: 1.4rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-radius: 8px;
     gap: 8px;
-    text-decoration: none;
+    padding-bottom: 8px;
     color: $text-1-color;
+    font-size: 1.3rem;
+    text-decoration: none;
 
-    @media(hover:hover) {
-        &:hover {
-            background-color: $header-link-hover;
+    .hoverDiv {
+        border-radius: 8px;
+        display: flex;
+        gap: 8px;
+        padding: 8px;
+
+        @media(hover: hover) {
+            &:hover {
+                background-color: $header-link-hover;
+            }
         }
     }
-}
 
-.active {
-    color: aqua;
+    &.active {
+        font-weight: 600;
+    }
 }

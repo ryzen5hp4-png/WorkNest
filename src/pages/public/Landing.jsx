@@ -9,7 +9,9 @@ const Landing = () => {
             </Helmet>
 
 
-            <Link to="/dashboard">aaaaaaaaaa</Link>
+
+
+            <Link to="/auth">aaaaaaaaaa</Link>
         </>
 
     )

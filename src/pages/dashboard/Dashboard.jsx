@@ -1,5 +1,8 @@
 import { Helmet } from "react-helmet-async"
 import Header from "../../components/Header/Header"
+import Main from "../../components/MainBlock/Main"
+
+
 
 const Dashboard = () => {
 
@@ -11,6 +14,10 @@ const Dashboard = () => {
             </Helmet>
 
             <Header />
+
+            <Main>
+                Main
+            </Main>
         </>
     )
 }

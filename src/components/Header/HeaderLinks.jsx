@@ -24,8 +24,10 @@ const HeaderLinks = () => {
                             isActive ? `${styles.link} ${styles.active}` : styles.link
                         }
                     >
-                        <span className="material-symbols-outlined">{link.iconName}</span>
-                        <span>{link.text}</span>
+                        <div className={styles.hoverDiv}>
+                            <span className="material-symbols-outlined">{link.iconName}</span>
+                            <span>{link.text}</span>
+                        </div>
                     </NavLink>
                 ))
             }
